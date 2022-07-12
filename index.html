@@ -102,7 +102,7 @@
     <form action="/" method="get">
       <fieldset>
         <legend>My first form</legend>
-        <p>
+        <div>
           <label for="name">Name</label><br />
           <input
             id="name"
@@ -111,16 +111,16 @@
             name="name"
             placeholder="Name"
           />
-        </p>
-        <p>
+        </div>
+        <div>
           <label for="email">Email</label><br />
           <input id="email" required type="email" name="Email" />
-        </p>
-        <p>
+        </div>
+        <div>
           <label for="password">Password</label><br />
           <input id="password" required type="password" name="password" />
-        </p>
-        <p>
+        </div>
+        <div>
           <label for="programming">Your programming level</label><br />
           <input
             id="programming"
@@ -130,8 +130,8 @@
             max="10"
             value="5"
           />
-        </p>
-        <p>
+        </div>
+        <div>
           What does HTML stand for?<br />
           <input
             id="stand_HTML-1"
@@ -155,8 +155,8 @@
             value="3"
           />
           <label for="stand_HTML-3">Hyper Text Markup Language</label><br />
-        </p>
-        <p>
+        </div>
+        <div>
           What does HTTP stand for?<br />
           <input id="stand_HTTP-1" type="radio" name="stand_HTTP" value="1" />
           <label for="stand_HTTP-1">Hyper Text Translate Protocol</label><br />
@@ -165,8 +165,8 @@
           ><br />
           <input id="stand_HTTP-3" type="radio" name="stand_HTTP" value="3" />
           <label for="stand_HTTP-3">Hyper Text Transfer Protocol</label><br />
-        </p>
-        <p>
+        </div>
+        <div>
           <label for="comment">Comment</label><br />
           <textarea
             id="comment"
@@ -174,8 +174,8 @@
             placeholder="comment"
             maxlength="500"
           ></textarea>
-        </p>
-        <p>
+        </div>
+        <div>
           <label for="select_html">What does HTML stand for?</label><br />
           <select name="select_html" id="select_html">
             <option disabled selected>Please select</option>
@@ -183,7 +183,7 @@
             <option value="2">Home Tool Markup Language</option>
             <option value="3">Hyper Text Markup Language</option>
           </select>
-        </p>
+        </div>
       </fieldset>
       <p>
         <button>Send</button>
