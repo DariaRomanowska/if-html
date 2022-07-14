@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  text-align: center;
+  width: 306px;
+  height: 47px;
+  color: #383838;
+  margin: 120px 567px 20px 567px;
+}
+hr {
+  width: 100px;
+  height: 4px;
+  background-color: #f5bd41;
+  margin-left: 670px;
+  margin-right: 670px;
+  border: 0;
+}
+.advantages {
+  width: 1440px;
+  height: 570px;
+  background-color: #ffffff;
+}
+.advantage {
+  display: inline-block;
+  margin-left: 223px;
+}
+
+.advantage-support {
+  width: 75px;
+  height: 92px;
+  margin-top: 84px;
+  margin-bottom: 52px;
+}
+
+.advantage-communicate {
+  width: 83px;
+  height: 83px;
+  margin-top: 88px;
+  margin-bottom: 56px;
+}
+
+.advantage-book {
+  width: 100px;
+  height: 67px;
+  margin-top: 97px;
+  margin-bottom: 65px;
+}
+
+.advantage-reviews {
+  width: 92px;
+  height: 84px;
+  margin-top: 84px;
+  margin-bottom: 60px;
+}
