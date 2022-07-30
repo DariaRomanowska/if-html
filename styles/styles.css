@@ -1,48 +1,45 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
 * {
   margin: 0;
   box-sizing: border-box;
 }
-@media screen and(width: 600px) {
-  .container {
-    width: 100%;
-    height: 569px;
-  }
+body {
+  max-width: 1440px;
 }
 
-h1 {
-  text-align: center;
-  width: 306px;
-  height: 47px;
-  margin: 120px auto 0;
-  font-family: 'Roboto', sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 40px;
-  line-height: 47px;
-  color: #383838;
-  padding-bottom: 20px;
-
-}
-h1::after {
-  content: '';
-  position: absolute;
-  left: 50%;
-  width: 100px;
-  height: 4px;
-  background-color: #F5BD41;
-  transform: translateX(-50%);
+.container {
+  padding: 120px 0;
   margin: 0 auto;
-  display: block;
 }
-
 .advantages {
   display: flex;
-  height: 184px;
-  width: calc(100% - 420px);
+  flex-direction: column;
+  justify-content: space-between;
+}
+.row {
+  display: flex;
+  gap: 16px;
+  text-align: center;
+  align-items: flex-end;
   margin: 0 auto;
-  background-color: #ffffff;
-  font-family: 'Roboto',sans-serif;
+}
+.col {
+  width: 298px;
+  height: 178px;
+}
+.advantages--row {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.advantages--row__icon {
+  margin-bottom: 48px;
+  display: flex;
+  align-items: center;
+}
+.advantages--row__title {
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
@@ -50,38 +47,24 @@ h1::after {
   text-align: center;
   color: #383838;
 }
-.advantage {
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.container h1 {
+  position: relative;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 47px;
+  color: #383838;
+  margin-bottom: 104px;
 }
-
-
-.advantage-support {
-  width: 75px;
-  height: 92px;
-  margin-top: 84px;
-  margin-bottom: 52px;
-}
-
-.advantage-communicate {
-  width: 83px;
-  height: 83px;
-  margin-top: 88px;
-  margin-bottom: 56px;
-}
-
-.advantage-book {
+.container h1::after {
+  content: "";
+  position: absolute;
+  left: 50%;
   width: 100px;
-  height: 67px;
-  margin-top: 97px;
-  margin-bottom: 65px;
-}
-
-.advantage-reviews {
-  width: 92px;
-  height: 84px;
-  margin-top: 84px;
-  margin-bottom: 60px;
+  height: 4px;
+  top: 66px;
+  background-color: #f5bd41;
+  transform: translateX(-50%);
 }
