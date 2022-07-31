@@ -8,94 +8,99 @@
     <link rel="stylesheet" href="./styles/styles.css" />
   </head>
   <body>
-    <header>
-      <div id="navigation">
-        <div class="title"></div>
-        <div class="links">
-          <nav>
-            <a class="nav-1" href="#">Stays</a>
-            <a class="nav-2" href="#">Attractions</a>
+    <div class="container main">
+      <div class="navigation">
+        <div class="navigation--title"></div>
+        <div class="navigation--links">
+          <nav class="navigation--links__block">
+            <a href="#">Stays</a>
+            <a href="#">Attractions</a>
           </nav>
-        </div>
-          <div class="mode"></div>
-          <div class="login"></div>
-        </div>
-        <h1 class="main-title">
-          Discover stays <br />
-          to live, work or just relax
-        </h1>
-        <form class="search">
-          <p class="name">
-            <label for="hotel-name">Your destination or hotel name </label
-            ><br />
-            <input id="hotel-name" name="place" type="text" value="New York" />
-          </p>
-          <p class="date">
-            <label for="date">Check-in — Check-out </label><br />
-            <input
-              id="date"
-              name="date"
-              type="text"
-              value="Tue 15 Sept — Sat 19 Sept"
-            />
-          </p>
-          <p class="bar">
-            <input
-              id="check"
-              name="bar"
-              type="text"
-              value="2 Adults — 0 Children — 1 Room"
-            />
-          </p>
-          <p class="button">
-            <input name="submit" type="submit" value="Search" />
-          </p>
-        </form>
-        <div class="app">
-          <div class="app-1"></div>
-          <div class="app-2"></div>
-        </div>
-    </header>
-    <div class="container">
-      <h2>What do we offer</h2>
-      <div class="advantages">
-        <div class="advantage-1 advantage">
-          <div class="advantage-support">
-            <img src="./image/headphones.png" alt="headphones" />
+          <div class="navigation--links__block">
+          <div class="navigation--mode"></div>
+          <div class="navigation--login"></div>
           </div>
-          <p>Support 24/7</p>
         </div>
-        <div class="advantage-2 advantage">
-          <div class="advantage-communicate">
-            <img src="image/forum.png" alt="forum" />
-          </div>
-          <p>Communicate directly</p>
+      </div>
+      <h1 class="main-title">
+        Discover stays <br />
+        to live, work or just relax
+      </h1>
+      <form class="search">
+        <p class="search--name">
+          <label for="hotel-name">Your destination or hotel name </label><br />
+          <input id="hotel-name" name="place" type="text" value="New York" />
+        </p>
+        <p class="search--date">
+          <label for="date">Check-in — Check-out </label><br />
+          <input
+            id="date"
+            name="date"
+            type="text"
+            value="Tue 15 Sept — Sat 19 Sept"
+          />
+        </p>
+        <p class="search--bar">
+          <input
+            id="check"
+            name="bar"
+            type="text"
+            value="2 Adults — 0 Children — 1 Room"
+          />
+        </p>
+        <p class="search--button">
+          <input name="submit" type="submit" value="Search" />
+        </p>
+      </form>
+      <div class="app">
+        <div class="app-android"></div>
+        <div class="app-apple"></div>
+      </div>
+    </div>
+    <div class="wrapper advantages">
+      <h1 class="title">What do we offer</h1>
+      <div class="row">
+        <div class="col advantages--row">
+          <img
+            class="advantages--row__icon"
+            src="./image/headphones.png"
+            alt="headphones"
+          />
+          <p class="advantages--row__title">Support 24/7</p>
         </div>
-        <div class="advantage-3 advantage">
-          <div class="advantage-book">
-            <img src="image/booking.png" alt="laptop and phone" />
-          </div>
-          <p>Book online</p>
+        <div class="col advantages--row">
+          <img
+            class="advantages--row__icon"
+            src="image/forum.png"
+            alt="forum"
+          />
+          <p class="advantages--row__title">Communicate directly</p>
         </div>
-        <div class="advantage-4 advantage">
-          <div class="advantage-reviews">
-            <img src="image/like.png" alt="Like" />
-          </div>
-          <p>Real guest reviews</p>
+        <div class="col advantages--row">
+          <img
+            class="advantages--row__icon"
+            src="image/booking.png"
+            alt="laptop and phone"
+          />
+          <p class="advantages--row__title">Book online</p>
+        </div>
+        <div class="col advantages--row">
+          <img class="advantages--row__icon" src="image/like.png" alt="Like" />
+          <p class="advantages--row__title">Real guest reviews</p>
         </div>
       </div>
     </div>
     <footer>
       <div class="columns">
-        <div class="column-1">
-          <h3>About</h3>
+        <div class="list column--about">
+          <h3 class="column--title">About</h3>
           <p>How Triphouse works</p>
           <p>Careers</p>
           <p>Privacy</p>
           <p>Terms</p>
         </div>
-        <div class="column-2">
-          <h3>Property types</h3>
+        <div class="list column--property">
+          <h3 class="column--title">Property types</h3>
           <p>Guest houses</p>
           <p>Hotels</p>
           <p>Apartments</p>
@@ -103,8 +108,8 @@
           <p>Holiday homes</p>
           <p>Hostels</p>
         </div>
-        <div class="column-3">
-          <h3>Support</h3>
+        <div class="list column--support">
+          <h3 class="column--title">Support</h3>
           <p>Contact Customer Service</p>
           <p>FAQ</p>
         </div>
