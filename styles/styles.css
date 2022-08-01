@@ -4,27 +4,28 @@
   box-sizing: border-box;
 }
 body {
-  max-width: 1440px;
+  width: 100%;
 }
 
 .container {
-  padding: 120px 0;
+  padding: 120px 104px;
   margin: 0 auto;
 }
 .advantages {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  align-items: center;
 }
 .row {
+  width: 100%;
   display: flex;
-  gap: 16px;
+  gap: 50px;
   text-align: center;
   align-items: flex-end;
   margin: 0 auto;
 }
 .col {
-  width: 298px;
+  width: 33%;
   height: 178px;
 }
 .advantages--row {
@@ -33,11 +34,23 @@ body {
   justify-content: space-around;
   align-items: center;
 }
-.advantages--row__icon {
-  margin-bottom: 48px;
-  display: flex;
-  align-items: center;
+
+.advantages--row__headphones{
+  margin-bottom: 52px;
 }
+
+.advantages--row__forum{
+margin-bottom: 56px;
+}
+
+.advantages--row__booking{
+margin-bottom: 64px;
+}
+
+.advantages--row__like{
+margin-bottom: 60px;
+}
+
 .advantages--row__title {
   font-family: "Roboto", sans-serif;
   font-style: normal;
