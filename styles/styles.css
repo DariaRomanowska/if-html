@@ -12,59 +12,6 @@ body {
   margin: 0 auto;
 }
 
-.advantages {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.row {
-  width: 100%;
-  display: flex;
-  gap: 50px;
-  text-align: center;
-  align-items: flex-end;
-  margin: 0 auto;
-}
-
-.col {
-  width: 33%;
-  height: 178px;
-}
-
-.advantages--row {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-}
-
-.advantages--row__headphones {
-  margin-bottom: 52px;
-}
-
-.advantages--row__forum {
-  margin-bottom: 56px;
-}
-
-.advantages--row__booking {
-  margin-bottom: 64px;
-}
-
-.advantages--row__like {
-  margin-bottom: 60px;
-}
-
-.advantages--row__title {
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 28px;
-  text-align: center;
-  color: #383838;
-}
-
 .container h1 {
   position: relative;
   text-align: center;
@@ -87,3 +34,54 @@ body {
   background-color: #f5bd41;
   transform: translateX(-50%);
 }
+
+
+.row {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 16px;
+}
+
+.col {
+  width: 22%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.advantages--row__headphones {
+  height: 176px;
+  padding-top: 4px;
+}
+
+.advantages--row__forum {
+  height: 178px;
+  padding-top: 8px;
+  padding-bottom: 2px;
+}
+
+.advantages--row__booking {
+  height: 183px;
+  padding-top: 16px;
+  padding-bottom: 7px;
+}
+
+.advantages--row__like {
+  padding-top: 4px;
+  padding-bottom: 7px;
+  height: 183px;
+}
+.advantages--row__title p {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  color: #383838;
+}
+
+
