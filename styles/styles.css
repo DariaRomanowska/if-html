@@ -1,53 +1,19 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
+@import url("./fonts.css");
+
 * {
   margin: 0;
   box-sizing: border-box;
 }
 
 body {
-  max-width: 1440px;
+  width: 100%;
 }
 
 .container {
-  padding: 120px 0;
+  padding: 120px 104px;
   margin: 0 auto;
 }
-.advantages {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-.row {
-  display: flex;
-  gap: 16px;
-  text-align: center;
-  align-items: flex-end;
-  margin: 0 auto;
-}
-.col {
-  width: 298px;
-  height: 178px;
-}
-.advantages--row {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-}
-.advantages--row__icon {
-  margin-bottom: 48px;
-  display: flex;
-  align-items: center;
-}
-.advantages--row__title {
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 28px;
-  text-align: center;
-  color: #383838;
-}
+
 .container h1 {
   position: relative;
   text-align: center;
@@ -59,6 +25,7 @@ body {
   color: #383838;
   margin-bottom: 104px;
 }
+
 .container h1::after {
   content: "";
   position: absolute;
@@ -69,10 +36,57 @@ body {
   background-color: #f5bd41;
   transform: translateX(-50%);
 }
-footer {
+
+.row {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 16px;
+}
+
+.col {
+  width: 22%;
   display: flex;
   flex-direction: column;
+  align-items: center;
   justify-content: space-between;
+}
+
+.advantages--row__headphones {
+  height: 176px;
+  padding-top: 4px;
+}
+
+.advantages--row__forum {
+  height: 178px;
+  padding-top: 8px;
+  padding-bottom: 2px;
+}
+
+.advantages--row__booking {
+  height: 183px;
+  padding-top: 16px;
+  padding-bottom: 7px;
+}
+
+.advantages--row__like {
+  padding-top: 4px;
+  padding-bottom: 7px;
+  height: 183px;
+}
+
+.advantages--row__title p {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  color: #383838;
+}
+
+footer {
   padding: 120px 0 120px 104px;
   font-family: "Roboto", sans-serif;
   font-style: normal;
@@ -87,25 +101,23 @@ footer {
   font-weight: 400;
   font-size: 20px;
   line-height: 24px;
-  text-align: start;
-  align-items: flex-start;
 }
-.list{
+
+.list {
+  width: 32%;
   display: flex;
   flex-direction: column;
-  width: 32%;
   gap: 24px;
   margin-bottom: 64px;
-  align-items: stretch;
 }
+
 .column--title {
   font-weight: 500;
   font-size: 20px;
-  line-height: 23px;
+  line-height: 24px;
 }
+
 .footer-down {
   font-size: 14px;
   line-height: 16px;
 }
-
-
