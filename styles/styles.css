@@ -9,6 +9,7 @@ body {
 
 .container {
   width: 1232px;
+  min-height: 100vh;
   padding: 50px 88px 120px 104px;
   margin: 0 auto;
 }
@@ -130,7 +131,6 @@ label {
 }
 
 input {
-  display: flex;
   height: 64px;
   background: #ffffff;
   border: 3px solid #f3f3f4;
@@ -141,6 +141,7 @@ input {
   font-size: 18px;
   line-height: 21px;
   color: #383838;
+  margin-top: 18px;
 }
 
 .search--name {
@@ -193,16 +194,14 @@ input[type="submit"] {
 }
 
 .app-android {
-  width: 50%;
-  height: 100%;
+  width: 135px;
   background-image: url("../image/header/groupapp.png");
   background-position: left;
   background-repeat: no-repeat;
 }
 
 .app-apple {
-  width: 44.5%;
-  height: 100%;
+  width: 118px;
   background-image: url("../image/header/groupapp.png");
   background-position: right;
   background-repeat: no-repeat;
