@@ -1,35 +1,98 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
+:root {
+  --text-color: #383838;
+  --general-white: #ffffff;
+  --col-width: calc(100% / 12);
+}
 * {
   margin: 0;
   box-sizing: border-box;
 }
+
 body {
   width: 100%;
 }
 
-.svg-sprites{
-  position:absolute;
-  visibility:hidden;
+.col-lg-1 {
+  width: var(--col-width);
+}
+
+.col-lg-2 {
+  width: calc(var(--col-width) * 2);
+}
+
+.col-lg-3 {
+  width: calc(var(--col-width) * 3);
+}
+
+.col-lg-4 {
+  width: calc(var(--col-width) * 4);
+}
+
+.col-lg-5 {
+  width: calc(var(--col-width) * 5);
+}
+
+.col-lg-6 {
+  width: 50%;
+}
+
+.col-lg-7 {
+  width: calc(var(--col-width) * 7);
+}
+
+.col-lg-8 {
+  width: calc(var(--col-width) * 8);
+}
+
+.col-lg-9 {
+  width: calc(var(--col-width) * 9);
+}
+
+.col-lg-10 {
+  width: calc(var(--col-width) * 10);
+}
+
+.col-lg-11 {
+  width: calc(var(--col-width) * 11);
+}
+
+.col-lg-12 {
+  width: 100%;
+}
+
+[class*="col-"] {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+
+
+
+.container {
+  max-width: 1264px;
+  padding: 0 16px;
+  margin: 0 auto;
+}
+
+.svg-sprites {
+  position: absolute;
+  visibility: hidden;
   width: 0;
   height: 0;
 }
 
-.wrapper {
-  width: 1232px;
-  padding: 50px 88px 120px 104px;
-  margin: 0 auto;
-}
-
 .main {
-  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: start;
   background-image: url(../image/header/background-header.png);
   background-repeat: no-repeat;
+  padding-top: 51px;
+  padding-bottom: 120px;
 }
 
-.navigation--title svg{
+.navigation--title svg {
   width: 205px;
   height: 40px;
 }
@@ -63,7 +126,7 @@ nav {
 
 nav a {
   text-decoration: none;
-  color: #ffffff;
+  color: var(--general-white);
 }
 
 nav a:nth-child(1) {
@@ -82,12 +145,12 @@ nav a:nth-child(1):after {
   display: block;
 }
 
-.navigation--mode svg{
+.navigation--mode svg {
   width: 30px;
   height: 30px;
 }
 
-.navigation--login svg{
+.navigation--login svg {
   width: 40px;
   height: 40px;
 }
@@ -98,7 +161,7 @@ nav a:nth-child(1):after {
   font-weight: 500;
   font-size: 50px;
   line-height: 59px;
-  color: #ffffff;
+  color: var(--general-white);
   margin-bottom: 97px;
 }
 
@@ -126,13 +189,13 @@ label {
   font-size: 18px;
   line-height: 31px;
   text-align: left;
-  color: #ffffff;
+  color: var(--general-white);
 }
 
 input {
   display: flex;
   height: 64px;
-  background: #ffffff;
+  background: var(--general-white);
   border: 3px solid #f3f3f4;
   border-radius: 8px;
   font-family: "Roboto", sans-serif;
@@ -140,7 +203,7 @@ input {
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
-  color: #383838;
+  color: var(--text-color);
 }
 
 .search--name {
@@ -180,7 +243,7 @@ input[type="submit"] {
   font-weight: 500;
   font-size: 24px;
   line-height: 28px;
-  color: #ffffff;
+  color: var(--general-white);
 }
 
 .app {
@@ -191,23 +254,23 @@ input[type="submit"] {
   margin: 0 auto;
 }
 
-.app-android svg{
+.app-android svg {
   width: 135px;
   height: 40px;
-
 }
 
-.app-apple svg{
+.app-apple svg {
   width: 120px;
   height: 40px;
 }
 
-.container {
-  padding: 120px 104px;
-  margin: 0 auto;
+.advantages {
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 
-.container h1 {
+
+.advantages h2 {
   position: relative;
   text-align: center;
   font-family: "Roboto", sans-serif;
@@ -215,11 +278,10 @@ input[type="submit"] {
   font-weight: 500;
   font-size: 40px;
   line-height: 47px;
-  color: #383838;
-  margin-bottom: 104px;
+  color: var(--text-color);
 }
 
-.container h1::after {
+.advantages h2::after {
   content: "";
   position: absolute;
   left: 50%;
@@ -231,15 +293,15 @@ input[type="submit"] {
 }
 
 .row {
-  width: 100%;
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
-  padding: 0 16px;
+  flex-wrap: wrap;
+  margin-left: -8px;
+  margin-right: -8px;
+  margin-top: 104px;
 }
 
-.col {
-  width: 22%;
+.column {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -296,16 +358,21 @@ input[type="submit"] {
   font-size: 24px;
   line-height: 28px;
   text-align: center;
-  color: #383838;
+  color: var(--text-color);
 }
 
 footer {
-  padding: 120px 0 120px 104px;
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 400;
-  color: #ffffff;
+  color: var(--general-white);
   background-color: #10367c;
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.logo-sm{
+  display: none;
 }
 
 .columns {
@@ -316,21 +383,117 @@ footer {
   line-height: 24px;
 }
 
-.list {
-  width: 32%;
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
-  margin-bottom: 64px;
+.lists{
+  width: 33%;
 }
 
 .column--title {
   font-weight: 500;
   font-size: 20px;
   line-height: 24px;
+  padding-bottom: 24px;
+}
+
+.content{
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
 }
 
 .footer-down {
+  margin-top: 64px;
+  padding-left: 104px;
   font-size: 14px;
   line-height: 16px;
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  :root{
+    --col-width: calc(100% / 6);
+  }
+
+  *:after {display:none}
+
+  .col-sm-1 {
+    width: var(--col-width);
+  }
+
+  .col-sm-2 {
+    width: calc(var(--col-width) * 2);
+  }
+
+  .col-sm-3 {
+    width: calc(var(--col-width) * 3);
+  }
+
+  .col-sm-4 {
+    width: calc(var(--col-width) * 4);
+  }
+
+  .col-sm-5 {
+    width: calc(var(--col-width) * 5);
+  }
+
+  .col-sm-6 {
+    width: 100%;
+  }
+
+  .column{
+    margin-bottom: 32px;
+  }
+
+  .column :last-child {
+    margin-bottom: 0;
+  }
+
+  .advantages h2 {
+    font-size: 28px;
+    line-height: 32px;
+  }
+
+  .row{
+    margin-top: 32px;
+  }
+
+  .advantages{
+    display: flex;
+    flex-direction: column;
+  }
+
+  footer{
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .logo-sm{
+    display: block;
+    aspect-ratio: auto;
+    height: 19px;
+    margin: 0 auto;
+  }
+
+  .lists{
+    width: 30%;
+  }
+
+  .column--title{
+    margin-top: 40px;
+    font-size: 15px;
+    line-height: 18px;
+    text-align: center;
+    text-decoration-line: underline;
+    padding-bottom: 32px;
+  }
+
+  .content{
+    display: none;
+  }
+
+  .footer-down{
+    font-size: 12px;
+    line-height: 14px;
+    margin: 0 auto;
+    padding-left: 70px;
+  }
 }
