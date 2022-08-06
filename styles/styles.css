@@ -4,17 +4,259 @@
   margin: 0;
   box-sizing: border-box;
 }
-
 body {
-  width: 100%;
+  max-width: 1440px;
 }
 
 .container {
-  padding: 120px 104px;
+  width: 1232px;
+  min-height: 100vh;
+  padding: 50px 88px 120px 104px;
   margin: 0 auto;
 }
 
-.container h1 {
+.main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  background-image: url(../image/header/background-header.png);
+  background-repeat: no-repeat;
+}
+
+.navigation--title {
+  width: 205px;
+  height: 40px;
+  background-image: url("../image/header/navigation.png");
+  margin: 0;
+  background-repeat: no-repeat;
+}
+
+.navigation {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 198px;
+}
+
+.navigation--links {
+  display: flex;
+  gap: 48px;
+}
+
+.navigation--links__block {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+
+nav {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+}
+
+nav a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+nav a:nth-child(1) {
+  position: relative;
+  line-height: 44px;
+}
+
+nav a:nth-child(1):after {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 4px;
+  background-color: #f5bd41;
+  transform: translateX(10%);
+  margin: 0 auto;
+  display: block;
+}
+
+.navigation--mode {
+  width: 30px;
+  height: 30px;
+  background-image: url("../image/header/navigation.png");
+  background-position: 620px;
+}
+
+.navigation--login {
+  width: 40px;
+  height: 40px;
+  background-image: url("../image/header/navigation.png");
+  background-position: 590px;
+}
+
+.main-title {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 50px;
+  line-height: 59px;
+  color: #ffffff;
+  margin-bottom: 97px;
+}
+
+.search {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-end;
+  margin-bottom: 120px;
+}
+
+.search p {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  align-content: flex-start;
+}
+
+label {
+  padding-left: 25px;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 31px;
+  text-align: left;
+  color: #ffffff;
+}
+
+input {
+  height: 64px;
+  background: #ffffff;
+  border: 3px solid #f3f3f4;
+  border-radius: 8px;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #383838;
+  margin-top: 18px;
+}
+
+.search--name {
+  display: flex;
+  flex-grow: 13;
+}
+
+.search--date {
+  display: flex;
+  flex-grow: 2;
+}
+
+.search--bar {
+  display: flex;
+  flex-grow: 5;
+}
+
+.search--button {
+  display: flex;
+  flex-grow: 7;
+}
+
+input[type="text"] {
+  padding-left: 24px;
+}
+
+#date {
+  border: 3px solid #f5bd41;
+  border-radius: 8px;
+}
+
+input[type="submit"] {
+  display: flex;
+  justify-content: center;
+  background: #3077c6;
+  border: 0;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  color: #ffffff;
+}
+
+.app {
+  width: 270px;
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+
+}
+
+.app-android {
+  width: 135px;
+  background-image: url("../image/header/groupapp.png");
+  background-position: left;
+  background-repeat: no-repeat;
+}
+
+.app-apple {
+  width: 118px;
+  background-image: url("../image/header/groupapp.png");
+  background-position: right;
+  background-repeat: no-repeat;
+}
+
+.wrapper {
+  width: 1264px;
+  padding: 120px 16px;
+  margin: 0 auto;
+}
+
+.advantages {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.row {
+  display: flex;
+  gap: 16px;
+  text-align: center;
+  align-items: flex-end;
+  margin: 0 auto;
+}
+
+.col {
+  width: 298px;
+  height: 178px;
+}
+
+.advantages--row {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.advantages--row__icon {
+  margin-bottom: 48px;
+  display: flex;
+  align-items: center;
+}
+
+.advantages--row__title {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  color: #383838;
+}
+
+.wrapper h1 {
   position: relative;
   text-align: center;
   font-family: "Roboto", sans-serif;
@@ -26,68 +268,22 @@ body {
   margin-bottom: 104px;
 }
 
-.container h1::after {
+.wrapper h1::after {
   content: "";
   position: absolute;
   left: 50%;
   width: 100px;
   height: 4px;
-  top: 66px;
+  top: 68px;
   background-color: #f5bd41;
   transform: translateX(-50%);
 }
 
-.row {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  padding: 0 16px;
-}
-
-.col {
-  width: 22%;
+footer {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: space-between;
-}
-
-.advantages--row__headphones {
-  height: 176px;
-  padding-top: 4px;
-}
-
-.advantages--row__forum {
-  height: 178px;
-  padding-top: 8px;
-  padding-bottom: 2px;
-}
-
-.advantages--row__booking {
-  height: 183px;
-  padding-top: 16px;
-  padding-bottom: 7px;
-}
-
-.advantages--row__like {
-  padding-top: 4px;
-  padding-bottom: 7px;
-  height: 183px;
-}
-
-.advantages--row__title p {
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 28px;
-  text-align: center;
-  color: #383838;
-}
-
-footer {
-  padding: 120px 0 120px 104px;
+  padding: 120px 104px;
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -96,38 +292,33 @@ footer {
 }
 
 .columns {
+  width: 1232px;
   display: flex;
+  gap: 20px;
   flex-direction: row;
   font-weight: 400;
   font-size: 20px;
   line-height: 24px;
+  text-align: start;
+  justify-content: space-between;
 }
 
 .list {
-  width: 32%;
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  width: 33%;
+  row-gap: 24px;
   margin-bottom: 64px;
+  align-items: stretch;
 }
 
 .column--title {
   font-weight: 500;
   font-size: 20px;
-  line-height: 24px;
+  line-height: 23px;
 }
 
 .footer-down {
   font-size: 14px;
   line-height: 16px;
-}
-
-.advantages--row__title p {
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 28px;
-  text-align: center;
-  color: #383838;
 }
