@@ -210,36 +210,99 @@
           to live, work or just relax
         </h1>
       </div>
-      <form class="container search">
-        <label class="name-title" for="hotel-name"
-          >Your destination or hotel name</label
-        >
-        <input
-          class="name"
-          id="hotel-name"
-          name="place"
-          type="text"
-          value="New York"
-        />
-        <label class="date-title" for="date">Check-in — Check-out</label>
-        <input
-          class="date"
-          id="date"
-          name="date"
-          type="text"
-          value="Tue 15 Sept — Sat 19 Sept"
-        />
-        <input class="date-sm" />
-        <input
-          class="check"
-          id="check"
-          name="bar"
-          type="text"
-          value="2 Adults — 0 Children — 1 Room"
-        />
-        <input class="check-sm-midl" />
-        <input class="check-sm" />
-        <input class="submit" name="submit" type="submit" value="Search" />
+      <form class="container search lg-12-col sm-3-col">
+        <div class="search--name">
+          <div class="search--name__title _name">
+            <label class="search--name__title-sm _white" for="hotel-name"
+              >Your destination or hotel name</label
+            >
+          </div>
+          <input
+            class="search--name__input-lg _black"
+            id="hotel-name"
+            name="place"
+            type="text"
+            value="New York"
+          />
+        </div>
+        <div class="search--date">
+          <div class="search--date__title">
+            <label class="search--date__title-lg _white" for="date-check-in">
+              Check-in</label
+            >
+          </div>
+          <input
+            class="search--date__title-sm _black"
+            id="date-check-in"
+            name="date"
+            type="text"
+            value="Tue 15 Sept"
+          />
+          <div class="search--date__title">
+            <label class="search--date__title-lg _white" for="date-"> — </label>
+          </div>
+          <input
+            class="search--date__title-empty _black"
+            id="date-"
+            name="date"
+            type="text"
+            value=" — "
+          />
+          <div class="search--date__title">
+            <label class="search--date__title-lg _white" for="date-check-out"
+              >Check-out</label
+            >
+          </div>
+          <input
+            class="search--date__title-sm _black"
+            id="date-check-out"
+            name="date"
+            type="text"
+            value="Sat 19 Sept"
+          />
+        </div>
+        <div class="search--check">
+          <div class="search--check-lg">
+            <input
+              class="search--check__bar _black"
+              type="text"
+              value="2 Adults - 0 Children - 1 Rooms"
+            />
+          </div>
+          <div class="search--check-sm">
+            <label for="adults">Adults</label>
+            <input
+              id="adults"
+              class="search--check__adults"
+              name="bar"
+              type="text"
+              value="2"
+            />
+          </div>
+          <div class="search--check-sm">
+            <label for="children">Children</label>
+            <input
+              id="children"
+              class="search--check__adults"
+              name="bar"
+              type="text"
+              value="0"
+            />
+          </div>
+          <div class="search--check-sm">
+            <label for="rooms">Rooms</label>
+            <input
+              id="rooms"
+              class="search--check__adults"
+              name="bar"
+              type="text"
+              value="1"
+            />
+          </div>
+        </div>
+        <div class="search--submit">
+          <input class="search--submit__input" name="submit" type="submit" value="Search" />
+        </div>
       </form>
       <div class="container lg-2-col sm-2-col app">
         <svg>

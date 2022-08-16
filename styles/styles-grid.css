@@ -24,6 +24,9 @@ body {
 .main {
   background-image: url(../image/header/background-header.png);
   background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-color: #10367c;
 }
 
 .container {
@@ -109,6 +112,7 @@ body {
   grid-area: title;
   width: 205px;
   height: 40px;
+  align-items: flex-start;
 }
 
 .navigation--links {
@@ -144,23 +148,23 @@ nav {
 nav a {
   text-decoration: none;
   color: var(--general-white);
-}
-
-nav a:nth-child(1) {
   position: relative;
   line-height: 44px;
-  padding-right: 24px;
 }
 
-nav a:nth-child(1):after {
+nav a:after {
   content: "";
   position: absolute;
-  width: 50px;
+  width: 0;
   height: 4px;
-  background-color: #f5bd41;
-  transform: translateX(10%);
-  margin: 0 auto;
-  display: block;
+  top: 100%;
+  left: 15%;
+  background: #f5bd41;
+  transform: translate(-10%);
+}
+
+nav a:hover::after {
+  width: 90%;
 }
 
 .main-title {
@@ -174,96 +178,107 @@ nav a:nth-child(1):after {
 }
 
 .search {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: 21px 64px;
-  row-gap: 24px;
+  align-items: self-end;
   margin-bottom: 120px;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 21px;
 }
 
-.name-title {
-  grid-column: 1 / span 3;
+._white{
+  color: var(--general-white);
+}
+
+._black{
+  color: var(--text-color);
+}
+
+.search--name {
+  display: grid;
+  grid-template-columns: 2fr;
+  grid-template-rows: repeat(2, auto);
+}
+
+.search--date {
+  display: grid;
+  grid-template-columns: 120px 10px 120px;
+  grid-template-rows: repeat(2, auto);
+}
+
+.search--date__title{
+  grid-column: auto;
   grid-row: 1 / 2;
-}
-
-.date-title {
-  grid-column: 5 / span 2;
-  grid-row: 1 / 2;
-}
-
-.name {
-  grid-column: 1 / span 5;
-  grid-row: 2 / 3;
-}
-
-.date {
-  grid-column: 5 / span 3;
-  grid-row: 2 / 3;
-  z-index: 2;
 }
 
 .date-sm {
   display: none;
 }
 
-.check {
-  grid-column: 7 / span 5;
-  grid-row: 2 / 3;
-  text-align: center;
+.search--check-lg {
+display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: repeat(2, auto);
 }
 
-.check-sm {
-  display: none;
-}
-
-.check-sm-midl {
-  display: none;
-}
-
-.submit {
-  grid-column: 11 / span 3;
+.search--check__bar{
   grid-row: 2 / 3;
 }
 
-label {
-  padding-left: 25px;
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 31px;
-  text-align: left;
-  color: var(--general-white);
+.search--check-sm {
+  display: none;
+}
+.search--submit {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: repeat(2, auto);
 }
 
-input {
-  color: var(--text-color);
-  background: var(--general-white);
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 21px;
-  border: 3px solid #f3f3f4;
-  border-radius: 8px;
-}
-input[type="text"] {
-  padding-left: 24px;
+.search--submit__input{
+  grid-row: 2 / 3;
 }
 
-#date {
-  border: 3px solid #f5bd41;
-  border-radius: 8px;
-}
 
-input[type="submit"] {
-  background: #3077c6;
-  border: 0;
-  font-weight: 500;
-  font-size: 24px;
-  line-height: 28px;
-  color: var(--general-white);
-}
+
+/*label {*/
+/*  padding-left: 25px;*/
+/*  font-family: "Roboto", sans-serif;*/
+/*  font-style: normal;*/
+/*  font-weight: 400;*/
+/*  font-size: 18px;*/
+/*  line-height: 31px;*/
+/*  text-align: left;*/
+/*  color: var(--general-white);*/
+/*}*/
+
+/*input {*/
+/*  color: var(--text-color);*/
+/*  background: var(--general-white);*/
+/*  font-family: "Roboto", sans-serif;*/
+/*  font-style: normal;*/
+/*  font-weight: 400;*/
+/*  font-size: 18px;*/
+/*  line-height: 21px;*/
+/*  border: 3px solid #f3f3f4;*/
+/*  border-radius: 8px;*/
+/*}*/
+/*input[type="text"] {*/
+/*  padding-left: 24px;*/
+/*}*/
+
+/*#date {*/
+/*  border: 3px solid #f5bd41;*/
+/*  border-radius: 8px;*/
+/*}*/
+
+/*input[type="submit"] {*/
+/*  background: #3077c6;*/
+/*  border: 0;*/
+/*  font-weight: 500;*/
+/*  font-size: 24px;*/
+/*  line-height: 28px;*/
+/*  color: var(--general-white);*/
+/*}*/
 
 .app {
   gap: 40px;
@@ -332,6 +347,7 @@ input[type="submit"] {
   .header--title {
     width: 120px;
     height: 24px;
+    justify-items: stretch;
   }
 
   .navigation--mode {
@@ -357,7 +373,7 @@ input[type="submit"] {
     margin-bottom: 0;
   }
 
-  form.search {
+  .search {
     width: 90%;
     display: grid;
     grid-template-columns: repeat(6, 1fr);
