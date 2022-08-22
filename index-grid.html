@@ -184,6 +184,12 @@
           fill="#fff"
         />
       </symbol>
+      <svg id="search" viewBox="0 0 16 16">
+        <path
+          d="M11.435 10.063h-.723l-.256-.247a5.92 5.92 0 0 0 1.437-3.87 5.946 5.946 0 1 0-5.947 5.947 5.92 5.92 0 0 0 3.87-1.437l.247.256v.723L14.637 16 16 14.637l-4.565-4.574Zm-5.489 0A4.111 4.111 0 0 1 1.83 5.946 4.111 4.111 0 0 1 5.946 1.83a4.111 4.111 0 0 1 4.117 4.116 4.111 4.111 0 0 1-4.117 4.117Z"
+          fill="#bfbfbf"
+        />
+      </svg>
     </svg>
     <div class="main">
       <div class="container header lg-12-col sm-6-col">
@@ -191,18 +197,20 @@
           <use href="#title" />
         </svg>
         <div class="header--nav">
-          <nav class="navigation--links">
-            <a href="#">Stays</a>
-            <a href="#">Attractions</a>
-          </nav>
+          <div class="dropdown" style="float: right">
+            <svg class="menu dropbtn">
+              <use href="#menu" />
+            </svg>
+            <nav class="navigation--links dropdown-content" style="right: 0">
+              <a href="#">Stays</a>
+              <a href="#">Attractions</a>
+            </nav>
+          </div>
           <svg class="navigation--mode">
             <use href="#mode" />
           </svg>
           <svg class="navigation--login">
             <use href="#login" />
-          </svg>
-          <svg class="menu">
-            <use href="#menu" />
           </svg>
         </div>
       </div>
@@ -214,10 +222,10 @@
       </div>
       <form class="container search sm-3-col">
         <div class="label-lg">
-          <label class="search--name__title-lg _white" for="hotel-name"
+          <label class="search--name__title-lg _white _name" for="hotel-name"
             >Your destination or hotel name</label
           >
-          <label class="search--date__title-lg _white" for="date">
+          <label class="search--date__title-lg _white _date" for="date">
             Check-in - Check-out</label
           >
         </div>
@@ -230,7 +238,7 @@
             value="New York"
           />
           <input
-            class="search--date__title-sm _black _frame"
+            class="search--date__input-lg _black _frame"
             id="date"
             name="date"
             type="text"
@@ -248,69 +256,72 @@
             value="Search"
           />
         </div>
-        <div class="name-sm">
-          <label class="search--name__title-lg _white" for="hotel-name-sm"
-            >Your destination or hotel name</label>
+        <div class="search--name_sm">
           <input
-                  class="search--name__input-lg _black _frame"
-                  id="hotel-name-sm"
-                  name="place"
-                  type="text"
-                  value="New York"
+            class="search--name__input-sm _search"
+            name="place"
+            type="text"
+            value="Your destination or hotel name"
           />
+          <svg class="search--name__icon">
+            <use href="#search" />
+          </svg>
         </div>
         <div class="search--date_sm">
-          <label class="search--date__title-lg _white" for="date-check-in">
+          <label class="search--date__title_sm _left" for="date-check-in">
             Check-in date</label
           >
           <input
-            class="search--date__title-sm _black"
+            class="search--date__input_sm _left"
             id="date-check-in"
             name="date"
             type="text"
             value="Tue 15 Sept 2020"
           />
-          <label class="search--date__title-lg _white" for="date-check-out"
+          <label class="search--date__title_sm _right" for="date-check-out"
             >Check-out date</label
           >
           <input
-            class="search--date__title-sm _black"
+            class="search--date__input_sm _right"
             id="date-check-out"
             name="date"
             type="text"
             value="Sat 19 Sept 2020"
           />
         </div>
-
-        <div class="search--check-sm">
-          <label for="adults">Adults</label>
+        <div class="search--check_sm">
+          <label class="search--check__title_sm _star" for="adults"
+            >Adults</label
+          >
           <input
+            class="search--check__input_sm _start"
             id="adults"
-            class="search--check__adults"
             name="bar"
             type="text"
             value="2"
           />
-          <label for="children">Children</label>
+          <label class="search--check__title_sm _midl" for="children"
+            >Children</label
+          >
           <input
+            class="search--check__input_sm _midl _border"
             id="children"
-            class="search--check__adults"
             name="bar"
             type="text"
             value="0"
           />
-          <label for="rooms">Rooms</label>
+          <label class="search--check__title_sm _end" for="rooms">Rooms</label>
           <input
+            class="search--check__input_sm _end"
             id="rooms"
-            class="search--check__adults"
             name="bar"
             type="text"
             value="1"
           />
         </div>
-        <div class="search--submit-sm">
+        <div class="search--submit_sm">
           <input
-            class="search--submit__input _frame"
+            class="search--submit__input_sm"
             name="submit"
             type="submit"
             value="Search"
