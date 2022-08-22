@@ -407,6 +407,12 @@ input[type="submit"] {
   font-size: 24px;
   line-height: 28px;
   color: #3077c6;
+  cursor: pointer;
+}
+
+.name:hover {
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.5);
+  color: #43434d;
 }
 
 .gallery p:first-of-type {
@@ -436,13 +442,14 @@ input[type="submit"] {
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.circle svg{
+.circle svg {
   width: 9px;
   height: 21px;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  fill: #f3f3f4;
 }
 
 footer {
@@ -586,49 +593,34 @@ footer {
     grid-template-rows: repeat(3, auto);
   }
 
-  .homes-title{
+  .homes-title {
     font-size: 28px;
     line-height: 33px;
   }
 
-  .gallery img{
+  .gallery img {
     width: 100%;
   }
 
-  .gallery p{
+  .gallery p {
     font-size: 12px;
     line-height: 14px;
   }
 
-  .gallery p:first-of-type{
+  .gallery p:first-of-type {
     text-shadow: none;
   }
 
-  div.gallery img:nth-last-of-type(1){
+  .gallery img:nth-last-of-type(1),
+  .gallery img:nth-last-of-type(2),
+  .gallery p:nth-last-of-type(1),
+  .gallery p:nth-last-of-type(2),
+  .gallery p:nth-last-of-type(3),
+  .gallery p:nth-last-of-type(4) {
     display: none;
   }
 
-  div.gallery img:nth-last-of-type(2){
-    display: none;
-  }
-
-  div.gallery p:nth-last-of-type(1){
-    display: none;
-  }
-
-  div.gallery p:nth-last-of-type(2){
-    display: none;
-  }
-
-  div.gallery p:nth-last-of-type(3){
-    display: none;
-  }
-
-  div.gallery p:nth-last-of-type(4){
-    display: none;
-  }
-
-  .gallery div:last-of-type{
+  .gallery div:last-of-type {
     width: 28px;
     height: 28px;
     content: "";
@@ -641,7 +633,7 @@ footer {
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
   }
 
-  .circle svg{
+  .circle svg {
     width: 7px;
     height: 15px;
     position: absolute;
