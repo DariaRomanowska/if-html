@@ -779,10 +779,13 @@ h2:hover::after {
   margin-bottom: 120px;
 }
 
+.reviews--title {
+  margin-bottom: 104px;
+}
+
 .reviews--top {
   grid-row: 1 / 2;
   position: relative;
-  margin-top: 104px;
 }
 
 .reviews--top img {
@@ -902,6 +905,11 @@ h2:hover::after {
   line-height: 21px;
 }
 
+.reviews--bottom__text {
+  font-size: 18px;
+  line-height: 21px;
+}
+
 ._rokoko div:last-child {
   width: 40px;
   height: 40px;
@@ -923,6 +931,10 @@ h2:hover::after {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.slider {
+  display: none;
 }
 
 footer {
@@ -1402,7 +1414,6 @@ footer {
   }
 
   .background-reviews {
-    row-gap: 32px;
     padding-top: 40px;
     padding-bottom: 40px;
     background-color: #eaf0f9;
@@ -1421,6 +1432,7 @@ footer {
     font-size: 28px;
     line-height: 33px;
     text-transform: capitalize;
+    margin-bottom: 0;
   }
 
   .background-price {
@@ -1433,7 +1445,18 @@ footer {
 
   .reviews--bottom {
     margin-top: 0;
-    padding: 0;
+    padding: 0 0 32px 0;
+    position: relative;
+  }
+
+  .slider {
+    width: 56px;
+    height: 8px;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-100%, -50%);
   }
 
   .reviews--bottom__block {
@@ -1468,7 +1491,7 @@ footer {
     line-height: 18px;
   }
 
-  .reviews--bottom-text {
+  .reviews--bottom__text {
     font-weight: 400;
     font-size: 15px;
     line-height: 18px;
