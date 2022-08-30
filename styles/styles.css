@@ -497,7 +497,7 @@ h2:hover::after {
   row-gap: 24px;
   column-gap: 16px;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(4, auto);
+  grid-template-rows: repeat(3, auto);
 }
 
 .homes--gallery img {
@@ -513,6 +513,12 @@ h2:hover::after {
   font-size: 24px;
   line-height: 28px;
   color: #3077c6;
+  cursor: pointer;
+}
+
+.name:hover {
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.5);
+  color: #43434d;
 }
 
 .homes--gallery p:first-of-type {
@@ -550,6 +556,7 @@ h2:hover::after {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  fill: #f3f3f4;
 }
 
 .destination {
@@ -999,7 +1006,6 @@ footer {
 
   .col-sm-2 {
     width: calc(var(--col-width) * 2);
-  }
 
   .col-sm-3 {
     width: calc(var(--col-width) * 3);
@@ -1045,6 +1051,15 @@ footer {
   .sm-6-col {
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: auto;
+  }
+  
+  .advantages h2::after {
+    display: none;
+  }
+
+  footer {
+    padding-top: 40px;
+    padding-bottom: 40px;
   }
 
   .header {
@@ -1398,6 +1413,11 @@ footer {
     background-color: #f3f3f4;
     border-radius: 50%;
     box-shadow: 0 4px 4px rgb(0 0 0 / 25%);
+  }
+
+  .name:hover {
+    text-shadow: none;
+    color: #43434d;
   }
 
   .circle-cursor svg {
