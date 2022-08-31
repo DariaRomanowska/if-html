@@ -610,7 +610,7 @@ h2:hover::after {
   height: 200px;
   align-items: center;
   justify-content: flex-start;
-  margin: 120px 104px;
+  margin: 0 104px;
 }
 
 .close {
@@ -921,7 +921,7 @@ footer {
     height: auto;
     display: inline-block;
     background-color: unset;
-    padding: 24px 16px;
+    padding: 0 16px;
     margin: 0;
   }
 
